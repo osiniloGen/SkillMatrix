@@ -1,9 +1,7 @@
-import argparse
 from datetime import datetime
 
 import cv2
 from airflow.models import DAG
-from airflow.operators.bash import BashOperator
 from airflow.operators.python import PythonOperator
 from airflow.providers.postgres.operators.postgres import PostgresOperator
 from easyocr import Reader
